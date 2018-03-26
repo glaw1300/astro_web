@@ -1,0 +1,115 @@
+body {
+    font-family: 'Mukta Mahee', sans-serif;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.topbar {
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #263238;
+}
+
+.topbar h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    padding: 4vh 0 3vh 0;
+    margin: 0;
+    width: 100%;
+    background-color: #263238;
+    line-height: 1.0;
+}
+
+.menu {
+    position: relative;
+    background-color: #263238;
+    text-align: center;
+    padding: .5vh 0 0 0;
+}
+
+.menu ol {
+    margin-top: 0;
+    padding: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu h3 {
+    color: #EEEEEE;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+    margin: 0 4px 4px 0;
+    transition: all .6s ease-in;
+}
+
+.menu h3 > a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.menu h3:hover {
+    text-decoration: underline;
+    background-color: #003c8f;
+    cursor: pointer;
+    transition: all .2s ease-in-out .1s;
+    border-bottom: 4px solid #003c8f;
+    margin-bottom: -4px;
+
+}
+
+.description_container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0px;
+    background-color: #263238;
+    width: 100%;
+    margin: 0;
+    transition: all .3s ease-in;
+}
+
+.menu h3:hover + .description_container{
+    z-index: 9999;
+    height: 4.5vw;
+    background-color: #003c8f;
+    bottom: -4.5vw;
+    transition: all .3s ease-in;
+}
+
+.menu h3:hover + .description_container p {
+    color: rgba(255,255,255,.99);
+    transition: all .3s ease-in;
+}
+
+.description_container p {
+    font-weight: 200;
+    font-size: 1.7vw;
+    color: rgba(255,255,255,.0);
+    text-align: center;
+    padding: 0 15% 0 15%;
+    margin: 3px 0 0 0;
+    line-height: 1.0;
+    transition: all .3s ease-in;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+.head h2{
+    font-size: 40px;
+    margin-top: 0;
+    color: #37464f;
+    text-align: center;
+}
