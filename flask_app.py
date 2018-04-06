@@ -1,9 +1,11 @@
 from flask import Flask, render_template, jsonify
 import mysql.connector
+import os
 
 app = Flask(__name__)
 
 def connect_db():
+    os.system("mysql.server start")
     conn = mysql.connector.connect(user='root', database='astronomy')
     cur = conn.cursor(buffered=True)
 
